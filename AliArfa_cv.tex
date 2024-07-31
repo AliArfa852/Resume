@@ -1,0 +1,145 @@
+\documentclass[11pt, a4paper]{article} 
+
+\usepackage[T1]{fontenc}     % We are using pdfLaTeX,
+\usepackage[utf8]{inputenc}  % hence this preparation
+\usepackage[british]{babel}  
+\usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
+\usepackage[stretch = 25, shrink = 25, tracking=true, letterspace=30]{microtype}  
+\usepackage{graphicx}        % To insert pictures
+\usepackage{xcolor}          % To add colour to the document
+\usepackage{marvosym}        % Provides icons for the contact details
+
+\usepackage{enumitem}        % To redefine spacing in lists
+\setlist{parsep = 0pt, topsep = 0pt, partopsep = 1pt, itemsep = 1pt, leftmargin = 6mm}
+
+\usepackage{FiraSans}        % Change this to use any font, but keep it simple
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{cvblue}{HTML}{304263}
+
+%%%%%%% USER COMMAND DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% These are the real workhorses of this template
+\newcommand{\dates}[1]{\hfill\mbox{\textbf{#1}}} % Bold stuff that doesn’t got broken into lines
+\newcommand{\is}{\par\vskip.5ex plus .4ex} % Item spacing
+\newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
+\newcommand{\headleft}[1]{\vspace*{3ex}\textsc{\textbf{#1}}\par%
+    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.7ex}}
+\newcommand{\headright}[1]{\vspace*{2.5ex}\textsc{\Large\color{cvblue}#1}\par%
+     \vspace*{-2ex}{\color{cvblue}\hrulefill}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[colorlinks = true, urlcolor = white, linkcolor = white]{hyperref}
+
+\begin{document}
+
+% Style definitions -- killing the unnecessary space and adding the skips explicitly
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\fboxsep}{0pt}
+\pagestyle{empty}
+\raggedbottom
+
+\begin{minipage}[t]{0.33\textwidth} %% Left column -- outer definition
+%  Left column -- top dark rectangle
+\colorbox{cvblue}{\begin{minipage}[t][5mm][t]{\textwidth}\null\hfill\null\end{minipage}}
+
+\vspace{-.2ex} % Eliminates the small gap
+\colorbox{cvblue!90}{\color{white}  %% LEFT BOX
+\kern0.09\textwidth\relax% Left margin provided explicitly
+\begin{minipage}[t][293mm][t]{0.82\textwidth}
+\raggedright
+\vspace*{2.5ex}
+
+\Large Ali \textbf{\textsc{Arfa}} \normalsize 
+
+\vspace*{0.5ex} % Extra space after the picture
+
+\headleft{Profile Summary}
+Passionate and detail-oriented \textit{Data Scientist} and \textit{Research Assistant} with extensive experience in programming, data analysis, web development, and machine learning. Proven track record in leading cross-functional teams, developing backend solutions, and enhancing user interfaces. Adept at utilizing advanced tools and methodologies to deliver insightful data-driven solutions. Strong communicator with a keen ability to translate complex data into actionable insights.
+
+\headleft{Contact details}
+\small % To fit more content
+\MVAt\ {\small aliarfa852@gmail.com} \\[0.4ex]
+\Mobilefone\ +92\,322\,7141420 \\[0.5ex]
+\Letter\ Islamabad, Pakistan\\
+\hyperlink{www.linkedin.com/in/aliarfa852}{linkedin aliarfa852}\\
+\hyperlink{https://github.com/AliArfa852}{Git AliArfa852}
+
+
+\normalsize
+
+\headleft{Skills}
+\begin{itemize}
+\item \textbf{Programming Languages:} Python, C++, C , C# , JavaScript, Visual Basic, NODE.JS
+\item \textbf{Database Management:} MongoDB, MySQL
+\item \textbf{Web Development:} HTML \& CSS, React
+\item \textbf{Tools:} Figma, GPT, Hugging Face, Hadoop, Spark, Kafka, micro python, React, Express, Rag
+\item \textbf{Data Analysis:} Big Data Analysis, Data Visualization, D3
+\item \textbf{AI,NLP, Edge Computation and Machine Learning}
+\end{itemize} 
+
+\end{minipage}%
+\kern0.09\textwidth\relax%%Right margin provided explicitly to stretch the colourbox
+}
+\end{minipage}% Right column
+\hskip2.5em% Left margin for the white area
+\begin{minipage}[t]{0.56\textwidth}
+\setlength{\parskip}{0.8ex}% Adds spaces between paragraphs; use \\ to add new lines without this space. Shrink this amount to fit more data vertically
+
+\vspace{2ex}
+
+\headright{Experience}
+
+\textsc{Research Assistant} at \textit{KDD Lab, Islamabad}  \dates{April 2024--Present} \\
+\smaller{Project Lead for three teams: Image Diffusion, Visualization Chatbot, and Git Crawler.} \\
+\smaller{Managed and coordinated the development of innovative solutions in AI and data science.}
+\smaller{Worked on edge technology, integrating SLM on edge devices and controlling hardware.} \\
+\is
+\textsc{Intern} at \textit{KDD Lab, Islamabad}  \dates{March 2023--April 2024} \\
+\smaller{worked on NCAI project as a group lead during the summer internship.} \\
+\smaller{Led a cross-functional team to implement new features and enhance the web interface.} \\
+\smaller{Successfully led the team in delivering audio and video analysis for live interviews as well as improving the frontend.}
+\smaller{Spearheaded backend development for seamless integration of functionalities.} \\
+\smaller{Worked on LLMs and language models.} \\
+
+
+\is
+\textsc{Instructor} at \textit{Adastra Academy, Lahore}  \dates{June 2018--June 2018} \\
+\smaller{Designed and conducted workshops on building Arduino-based robots.} \\
+\smaller{Instructed participants on hardware assembly and code functionality.} \\
+\smaller{Demonstrated troubleshooting techniques and provided one-on-one assistance for project success.}
+
+\headright{Education}
+
+
+
+
+
+\textsc{FAST NUCES, Islamabad} \\
+\smaller{BSDS} \dates{August 2021--Present}
+\is
+\textsc{The City School DHA, Lahore} \\
+\smaller{A' Level} \dates{August 2019--June 2021}
+\is
+\textsc{The City School DHA, Lahore} \\
+\smaller{O' Level} \dates{August 2016--June 2019}
+
+\headright{Personal Projects}
+
+\smaller{\textsc{Age and Gender Prediction}} \\
+
+\is
+\smaller{\textsc{ESP WiFi-Based Toy Car Controls}} \\
+\is
+\smaller{\textsc{Hand Gesture Controlled Bot }} \\
+\is
+\smaller{\textsc{RAG PDF Chatbot}} \\
+
+\headright{Hobbies}
+
+\textit{Listening to Music, Making Bots, Driving}
+
+\end{minipage}
+
+\end{document}
